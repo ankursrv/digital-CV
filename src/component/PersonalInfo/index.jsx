@@ -39,7 +39,7 @@ const PersonalInfo = ({ infoImg }) => {
                 <div className="grid sm:grid-cols-2 gap-2 text-graySecondary">
                     {
                         personInfo.map((infoItem, index) => (
-                            <div>
+                            <div key={index}>
                                 <h5 className="font-medium text-base text-black">{infoItem.perInfoTitle}</h5>
                                 <p className="leading-[26px]">{infoItem.perInfoText}</p>
                             </div>

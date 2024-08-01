@@ -48,8 +48,8 @@ const Header = () => {
                             <li key={index} className="py-2 text-black text-sm uppercase">
                                 <NavLink
                                     to={navItem.href}
-                                    activeClassName="active"  // This sets the class name for active state
-                                    exact={navItem.href === '/'}  // Adjust exact based on your needs
+                                    className={({ isActive }) => isActive ? 'active' : ''}  // This sets the class name for active state
+                                    // exact={navItem.href === '/'}  // Adjust exact based on your needs
                                 >
                                     {navItem.link}
                                 </NavLink>
@@ -77,8 +77,8 @@ const Header = () => {
                                     <li key={index} className="py-2 text-black text-sm uppercase">
                                         <NavLink
                                             to={navItem.href}
-                                            activeClassName="active"  // This sets the class name for active state
-                                            exact={navItem.href === '/'}  // Adjust exact based on your needs
+                                            className={({ isActive }) => isActive ? 'active' : ''}  // This sets the class name for active state
+                                            // exact={navItem.href === '/'}  // Adjust exact based on your needs
                                         >
                                             {navItem.link}
                                         </NavLink>
