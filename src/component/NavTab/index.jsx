@@ -83,21 +83,21 @@ const NavTab = () => {
     return (
         <section>
             <div>
-                <div className="flex gap-8 justify-center mb-[50px]">
+                <div className="flex flex-col items-center lg:flex lg:flex-row gap-8 justify-center mb-[50px]">
                     {
                         navButton.map((btnItems, btnIndex)=>(
                             <RoundedButton 
                             key={btnIndex}
                             onClick={handleBtns}
                             btnValue={btnItems.value}
-                            className={activeButton === btnItems.value ? 'bg-blue text-white' : 'bg-gray-200 text-black'}
+                            className={`w-fit ${activeButton === btnItems.value ? 'bg-blue text-white' : 'bg-gray-200 text-black'}`}
                             btnText={btnItems.btnName}
                             />
                         ))
                     }
                 </div>
 
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-3 gap-6">
                     {
                         category.map((item, index) => (
                             <div key={index}>
