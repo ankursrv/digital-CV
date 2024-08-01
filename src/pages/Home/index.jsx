@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';     //Swiprer
 import { Navigation, Pagination } from 'swiper/modules';    //navigation
 import 'swiper/css';        //Swiprer 
 import 'swiper/css/navigation';     //navigation CSS
+import LandingPageTitle from '../../component/LandingPageTitle';
 
 // Button Start 
 const Buttons = [
@@ -137,10 +138,10 @@ const Home = () => {
 
             {/* Technology Skill Start  */}
             <section className="mt-[100px] max-w-[1330px] mx-auto px-4 sm:px-8 md:px-0">
-                <div className="flex flex-col items-center">
-                    <small className="font-medium text-lg text-blue">Technology Stack</small>
-                    <h2 className="text-[32px] font-medium">My Skills</h2>
-                </div>
+                <LandingPageTitle
+                    landingPageText="Technology Stack"
+                    landingPageTitle="My Skills"
+                />
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}
@@ -188,10 +189,10 @@ const Home = () => {
 
             {/* Work Experience Start  */}
             <section className="mt-[100px] max-w-[1330px] mx-auto px-4 sm:px-8 md:px-0">
-                <div className="flex flex-col items-center">
-                    <small className="font-medium text-lg text-blue">Our Journey</small>
-                    <h2 className="text-[32px] font-medium">Work Experience</h2>
-                </div>
+                <LandingPageTitle
+                    landingPageText="Our Journey"
+                    landingPageTitle="Work Experience"
+                />
             </section>
             {/* Work Experience END  */}
         </main>
