@@ -9,6 +9,7 @@ import 'swiper/css';        //Swiprer
 import 'swiper/css/navigation';     //navigation CSS
 import LandingPageTitle from '../../component/LandingPageTitle';
 import WorkExperienceCard from '../../component/WorkExperienceCard';
+import NavTab from '../../component/NavTab';
 
 // Button Start 
 const Buttons = [
@@ -203,6 +204,18 @@ const Home = () => {
                 </div>
             </section>
             {/* Work Experience END  */}
+
+            {/* PortFolio Start  */}
+            <section className="mt-[100px] max-w-[1330px] mx-auto px-4 sm:px-8 md:px-0">
+                <LandingPageTitle
+                    landingPageText="Portfolio"
+                    landingPageTitle="My Works"
+                />
+                <div>
+                        <NavTab />
+                </div>
+            </section>
+            {/* PortFolio END  */}
         </main>
     )
 }
