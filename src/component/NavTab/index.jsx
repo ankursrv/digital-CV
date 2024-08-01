@@ -83,14 +83,14 @@ const NavTab = () => {
     return (
         <section>
             <div>
-                <div className="flex flex-col items-center lg:flex lg:flex-row gap-8 justify-center mb-[50px]">
+                <div className="flex flex-col items-center md:flex-row gap-3 justify-center mb-[50px]">
                     {
                         navButton.map((btnItems, btnIndex)=>(
                             <RoundedButton 
                             key={btnIndex}
                             onClick={handleBtns}
                             btnValue={btnItems.value}
-                            className={`w-fit ${activeButton === btnItems.value ? 'bg-blue text-white' : 'bg-gray-200 text-black'}`}
+                            className={`w-fit hover:bg-blue hover:text-white transition-all duration-300 ${activeButton === btnItems.value ? 'bg-blue text-white' : 'bg-gray-200 text-black'}`}
                             btnText={btnItems.btnName}
                             />
                         ))
@@ -100,11 +100,9 @@ const NavTab = () => {
                 <div className="grid md:grid-cols-3 gap-6">
                     {
                         category.map((item, index) => (
-                            <div key={index}>
-                                <div>
-                                    <img src={item.linkImg} alt="portfolio image" className="h-[350px] rounded-xl w-full shadow-shadowFouth" />
+                                <div key={index}>
+                                    <img src={item.linkImg} alt="portfolio image" className="h-[350px] rounded-xl w-full shadow-shadowFouth transition-all duration-300" />
                                 </div>
-                            </div>
                         ))
                     }
                 </div>
