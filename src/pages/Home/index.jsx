@@ -172,7 +172,7 @@ const Home = () => {
                             <SwiperSlide key={index} className=''>
                                 <SkillCard
                                     skillStyle="flex flex-col items-center justify-center gap-4 shadow-shadowTertary p-6 rounded-md"
-                                    styleImg = "h-16 object-cover"
+                                    styleImg="h-16 object-cover"
                                     skillImages={
                                         techCardItem.techSkillImg.map((techCardImg) => `./images/${techCardImg}`)
                                     }
@@ -185,6 +185,15 @@ const Home = () => {
                 </Swiper>
             </section>
             {/* Technology Skill END  */}
+
+            {/* Work Experience Start  */}
+            <section className="mt-[100px] max-w-[1330px] mx-auto px-4 sm:px-8 md:px-0">
+                <div className="flex flex-col items-center">
+                    <small className="font-medium text-lg text-blue">Our Journey</small>
+                    <h2 className="text-[32px] font-medium">Work Experience</h2>
+                </div>
+            </section>
+            {/* Work Experience END  */}
         </main>
     )
 }
