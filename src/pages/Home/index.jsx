@@ -69,6 +69,10 @@ const techSkillCard = [
         techSkillImg: ['xd.svg'],
         techSkilltitle: 'Adobe XD'
     },
+    {
+        techSkillImg: ['css.svg'],
+        techSkilltitle: 'CSS'
+    },
 ]
 // Technology Skills Card END  
 
