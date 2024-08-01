@@ -8,6 +8,7 @@ import { Navigation, Pagination } from 'swiper/modules';    //navigation
 import 'swiper/css';        //Swiprer 
 import 'swiper/css/navigation';     //navigation CSS
 import LandingPageTitle from '../../component/LandingPageTitle';
+import WorkExperienceCard from '../../component/WorkExperienceCard';
 
 // Button Start 
 const Buttons = [
@@ -76,6 +77,10 @@ const techSkillCard = [
     },
 ]
 // Technology Skills Card END  
+
+// Work Experience Start
+
+// Work Experience END 
 
 const Home = () => {
     return (
@@ -166,7 +171,7 @@ const Home = () => {
                         },
                     }}
                     modules={[Pagination, Navigation]}
-                    className="mySwiper !py-12 !px-8 md:!px-12"
+                    className="mySwiper !py-6 !px-8 md:!px-12"
                 >
                     {
                         techSkillCard.map((techCardItem, index) => (
@@ -193,6 +198,9 @@ const Home = () => {
                     landingPageText="Our Journey"
                     landingPageTitle="Work Experience"
                 />
+                <div className="grid md:grid-cols-3 gap-6 mt-6">
+                    <WorkExperienceCard />
+                </div>
             </section>
             {/* Work Experience END  */}
         </main>

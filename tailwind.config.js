@@ -23,7 +23,8 @@ module.exports = {
       boxShadow:{
         shadowPrimary:' 0 -3px 30px 0 rgb(197 197 197 / 100%);',
         shadowSecondary : ' 0 8px 25px 0 rgb(0 0 0 / 15%)',
-        shadowTertary :'0 1px 50px 0 rgb(197 197 197 / 60%)'
+        shadowTertary :'0 1px 50px 0 rgb(197 197 197 / 60%)',
+        shadowFouth: '0 .5rem 1rem rgba(0, 0, 0, .15)'
       }
     },
   },
