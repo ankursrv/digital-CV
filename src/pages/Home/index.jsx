@@ -161,7 +161,7 @@ const Home = () => {
                         },
                     }}
                     modules={[Pagination, Navigation]}
-                    className="mySwiper !py-12 !px-12"
+                    className="mySwiper !py-12 !px-8 md:!px-12"
                 >
                     {
                         techSkillCard.map((techCardItem, index) => (

@@ -49,7 +49,7 @@ const PersonalInfo = ({ infoImg }) => {
 
                     <Button 
                     btnText="Download CV"
-                    btnStyle="text-white md:w-fit mt-8"
+                    btnStyle="text-white w-fit mt-8"
                     />
                 </div>
             </div>
