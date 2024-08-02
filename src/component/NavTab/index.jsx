@@ -62,7 +62,7 @@ const NavTab = () => {
     const handleBtns = (e) => {
         let word = e.target.value;
 
-        setActiveButton(e.target.value);    //TaB button color change Active
+        setActiveButton(word);    //TaB button color change Active
 
         if (word === "All") {
             setCategory(collectionData)
