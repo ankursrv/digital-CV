@@ -199,7 +199,7 @@ const Home = () => {
                     landingPageText="Our Journey"
                     landingPageTitle="Work Experience"
                 />
-                <div className="grid md:grid-cols-3 gap-6 mt-6">
+                <div className="grid md:grid-cols-3 gap-6">
                     <WorkExperienceCard />
                 </div>
             </section>
@@ -211,9 +211,7 @@ const Home = () => {
                     landingPageText="Portfolio"
                     landingPageTitle="My Works"
                 />
-                <div>
-                        <NavTab />
-                </div>
+                <NavTab />
             </section>
             {/* PortFolio END  */}
         </main>
