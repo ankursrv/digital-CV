@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";   // NavLink to add the active class 
 import { FiPhone } from 'react-icons/fi';
 import { CiMail } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { NavLink } from 'react-router-dom'; // Active Nav Link 
 
 const navLink = [
     {
@@ -46,13 +45,7 @@ const Header = () => {
                     {
                         navLink.map((navItem, index) => (
                             <li key={index} className="py-2 text-black text-sm uppercase">
-                                <NavLink
-                                    to={navItem.href}
-                                    className={({ isActive }) => isActive ? 'active' : ''}  // This sets the class name for active state
-                                    // exact={navItem.href === '/'}  // Adjust exact based on your needs
-                                >
-                                    {navItem.link}
-                                </NavLink>
+                                <NavLink to={navItem.href}>{navItem.link}</NavLink>
                             </li>
                         ))
                     }
