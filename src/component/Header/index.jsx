@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";   // NavLink to add the active class 
+import { Link, NavLink } from "react-router-dom";   // NavLink active class ko add krta hai  
 import { FiPhone } from 'react-icons/fi';
 import { CiMail } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
