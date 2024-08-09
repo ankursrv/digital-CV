@@ -47,9 +47,27 @@ const PersonalInfo = ({ infoImg }) => {
                         ))
                     }
 
-                    <Button 
+                    <Button
                     btnText="Download CV"
                     btnStyle="text-white w-fit mt-8"
+                    
+                    />
+                     <Button
+                    btnText="button Secondary"
+                    btnStyle="text-white w-fit mt-8"
+                    btnSecondary
+                    
+                    />
+                     <Button
+                    btnText="button tertary"
+                    btnStyle="text-white w-fit mt-8"
+                    btnTertary
+                    
+                    />
+                     <Button
+                    btnText="Download CV"
+                    btnStyle="text-white w-fit mt-8"
+                    
                     />
                 </div>
             </div>

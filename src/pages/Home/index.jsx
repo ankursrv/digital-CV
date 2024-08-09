@@ -12,16 +12,16 @@ import WorkExperienceCard from '../../component/WorkExperienceCard';
 import NavTab from '../../component/NavTab';
 
 // Button Start 
-const Buttons = [
-    {
-        buttonText: 'My Work',
-        style: 'text-white focus:bg-blue focus:text-white'
-    },
-    {
-        buttonText: 'My Skill',
-        style: 'bg-white text-black hover:!bg-blue hover:text-white focus:bg-blue focus:text-white duration-200'
-    },
-]
+// const Buttons = [
+//     {
+//         buttonText: 'My Work',
+//         style: 'text-white focus:bg-blue focus:text-white'
+//     },
+//     {
+//         buttonText: 'My Skill',
+//         style: 'bg-white text-black hover:!bg-blue hover:text-white focus:bg-blue focus:text-white duration-200'
+//     },
+// ]
 // Button Start 
 
 // Skills Card Start 
@@ -94,14 +94,17 @@ const Home = () => {
                         <h1 className="text-[70px] leading-[84px] font-bold my-1">Pramod Ganesh Dalal</h1>
                         <h5 className="text-2xl font-medium mb-12">UI Designer</h5>
                         <div className="flex gap-4">
-                            {
-                                Buttons.map((btnItem, index) => (
-                                    <Button key={index}
-                                        btnText={btnItem.buttonText}
-                                        btnStyle={btnItem.style}
-                                    />
-                                ))
-                            }
+                            <Button
+                                primary
+                            >
+                                My Work
+                            </Button>
+
+                            <Button
+                                secondary
+                            >
+                                My Skill
+                            </Button>
                         </div>
                     </div>
                     <div className="md:mr-14 relative z-20">
