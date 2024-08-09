@@ -11,20 +11,6 @@ import LandingPageTitle from '../../component/LandingPageTitle';
 import WorkExperienceCard from '../../component/WorkExperienceCard';
 import NavTab from '../../component/NavTab';
 
-// Button Start 
-// const Buttons = [
-//     {
-//         buttonText: 'My Work',
-//         style: 'text-white focus:bg-blue focus:text-white'
-//     },
-//     {
-//         buttonText: 'My Skill',
-//         style: 'bg-white text-black hover:!bg-blue hover:text-white focus:bg-blue focus:text-white duration-200'
-//     },
-// ]
-// Button Start 
-
-// Skills Card Start 
 const skillsCards = [
     {
         skillCardImg: ['web-design.svg'],

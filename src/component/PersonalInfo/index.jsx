@@ -36,7 +36,7 @@ const PersonalInfo = ({ infoImg }) => {
                 <small className="font-medium text-lg text-blue">Personal Info</small>
                 <h2 className="text-[32px] font-medium mb-4 md:mb-12">Know Me More</h2>
                 <p className="text-base text-graySecondary mb-4">I’m with broad technical skill-set, very strong attention to detail, and 3 years of experience in front-end web development. Able to multitask and juggle multiple pressing projects simultaneously. On top of the latest trends and technologies. Ability to improvise, troubleshoot, take ownership, and most importantly learn new skills on the job.</p>
-                <div className="grid sm:grid-cols-2 gap-2 text-graySecondary">
+                <div className="grid sm:grid-cols-2 gap-2 text-graySecondary mb-10">
                     {
                         personInfo.map((infoItem, index) => (
                             <div key={index}>
@@ -47,29 +47,14 @@ const PersonalInfo = ({ infoImg }) => {
                         ))
                     }
 
-                    <Button
-                    btnText="Download CV"
-                    btnStyle="text-white w-fit mt-8"
-                    
-                    />
-                     <Button
-                    btnText="button Secondary"
-                    btnStyle="text-white w-fit mt-8"
-                    btnSecondary
-                    
-                    />
-                     <Button
-                    btnText="button tertary"
-                    btnStyle="text-white w-fit mt-8"
-                    btnTertary
-                    
-                    />
-                     <Button
-                    btnText="Download CV"
-                    btnStyle="text-white w-fit mt-8"
-                    
-                    />
                 </div>
+                <Button
+                    primary
+                    type='button'
+                >
+                    Download CV
+                </Button>
+
             </div>
 
         </div>
